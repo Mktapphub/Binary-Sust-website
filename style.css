@@ -181,3 +181,60 @@ body {
     margin-top: 20px;
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    
+    .sidebar {
+        width: 200px;
+    }
+    .sidebar .toggle-btn {
+        top: 15px;
+        right: -45px;
+    }
+    .sidebar ul li a {
+        font-size: 0.9rem;
+    }
+
+    
+    .main-content {
+        padding: 10px;
+    }
+
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .header .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header nav {
+        margin-top: 10px;
+    }
+    .header nav a {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+
+    
+    .moto {
+        padding: 30px 10px;
+    }
+    .moto h1 {
+        font-size: 2rem;
+    }
+    .moto p {
+        font-size: 1rem;
+    }
+
+    
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .card {
+        padding: 10px;
+    }
+}
