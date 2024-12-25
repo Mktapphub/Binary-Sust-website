@@ -181,7 +181,7 @@ body {
     margin-top: 20px;
     border-radius: 10px;
 }
-
+/* General mobile adjustment added */
 @media (max-width: 768px) {
     
     .sidebar {
