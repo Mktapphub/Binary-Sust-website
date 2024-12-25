@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(180deg, #4CAF50, #388E3C);
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar .toggle-btn {
+    background: white;
+    color: #4CAF50;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+    padding: 20px;
+    background: #F5F5F5;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 250px;
+}
+
+/* Header */
+.header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Moto Section */
+.moto {
+    background: url('Banner.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.moto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.moto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.moto button {
+    background: #388E3C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.moto button:hover {
+    background: #2E7D32;
+}
+
+/* Sections */
+.section {
+    margin-top: 20px;
+}
+
+.section h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background: #388E3C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
